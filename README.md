@@ -5,7 +5,9 @@ There are a number of configuration steps on the machine to run the scans.
 1) wpscan is a prerequisite.
 2) crontab should be added for a daily scan of the domains needed
 This can look like this:
+
 0 0 * * * /etc/zabbix/scripts/wp_scan_wrapper.sh
+
 However, the frequency could be up to you.  I don't have a need for more than once per day scanning
 3) create a directory at /tmp/wpscan_results that Zabbix can read and your crontab user can write to.
 4) take the scripts above and install in /etc/zabbix/scripts
